@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SACHFRAMES (Sachin S Ballari) - Professional Filmmaker, Videographer, and Editor. Turning ordinary moments into cinematic experiences.">
+    <title>SACHFRAMES | Cinematic Storyteller</title>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Smooth Page Overlay transition -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo-link">SACHFRAMES</a>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="site-nav">
+                <ul class="nav-links">
+                    <li><a href="#work" class="nav-link">WORK</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#services" class="nav-link">SERVICES</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-container">
+                <!-- Fallback background image with zoom transition -->
+                <div class="hero-bg-image" style="background-image: url('assets/hero_bg.jpg');"></div>
+                <!-- Interactive silent video tag if user drops showreel.mp4 later -->
+                <video class="hero-bg-video" autoplay loop muted playsinline poster="assets/hero_bg.jpg">
+                    <source src="assets/AllDOORS!-2.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content container">
+                <h1 class="hero-headline fade-up">
+                    TURNING ORDINARY MOMENTS<br>
+                    INTO CINEMATIC EXPERIENCES.
+                </h1>
+                <p class="hero-subtitle fade-up delay-1">
+                    Filmmaker &bull; Videographer &bull; Editor
+                </p>
+                <div class="hero-ctas fade-up delay-2">
+                    <a href="#work" class="btn btn-outline">VIEW WORK</a>
+                    <a href="#contact" class="btn btn-solid">LET'S WORK TOGETHER</a>
+                </div>
+            </div>
+            <div class="scroll-indicator fade-up delay-3">
+                <span class="scroll-text">SCROLL</span>
+                <span class="scroll-line"></span>
+            </div>
+        </section>
+
+        <!-- Featured Work Section -->
+        <section id="work" class="work-section container reveal-section">
+            <div class="section-label">01 / FEATURED WORK</div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-project-id="storytelling">
+                    <div class="project-image-wrapper">
+                        <img src="assets/storytelling.jpg" alt="Photography Still" class="project-image">
+                        <div class="project-overlay">
+                            <span class="view-project-label">VIEW STILL</span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">PHOTOGRAPHY</h3>
+                        <p class="project-category">High-Contrast &bull; Editorial Stills</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-project-id="selfedit">
+                    <div class="project-image-wrapper">
+                        <img src="assets/Film Making.jpg" alt="Short Films Still" class="project-image">
+                        <div class="project-overlay">
+                            <span class="view-project-label">PLAY CLIP</span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">SHORT FILMS</h3>
+                        <p class="project-category">Director &bull; Narrative</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-project-id="alldoors">
+                    <div class="project-image-wrapper">
+                        <img src="assets/Clients.jpeg" alt="Behind the Scene Still" class="project-image">
+                        <div class="project-overlay">
+                            <span class="view-project-label">PLAY CLIP</span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">BEHIND THE SCENE</h3>
+                        <p class="project-category">Cinematography &bull; Behind the Scenes</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-project-id="events">
+                    <div class="project-image-wrapper">
+                        <img src="assets/event.JPG" alt="Event Cinematic Video Still" class="project-image">
+                        <div class="project-overlay">
+                            <span class="view-project-label">PLAY CLIP</span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">EVENTS</h3>
+                        <p class="project-category">Multi-Cam Coverage &bull; Live Events</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card grid-col-span-2" data-project-id="editor">
+                    <div class="project-image-wrapper">
+                        <img src="assets/Screenshot 2026-06-20 095950.jpg" alt="Editor Workstation Still"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <span class="view-project-label">PLAY CLIP</span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <h3 class="project-title">EDITOR</h3>
+                        <p class="project-category">Post-Production &bull; Color Grading</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section container reveal-section">
+            <div class="section-label">02 / ABOUT</div>
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <img src="assets/developer_portrait.jpeg" alt="Sachin S Ballari Portrait" class="about-image">
+                </div>
+                <div class="about-text-wrapper">
+                    <h2 class="about-headline">Hi, I'm Sachin Ballari.</h2>
+                    <p class="about-description">
+                        I'm a filmmaker and content creator based in Karnataka. What started as a passion for capturing
+                        moments has grown into creating visual stories for brands, restaurants, creators, and
+                        businesses.
+                    </p>
+                    <p class="about-body">
+                        I enjoy planning shots, finding creative angles, and turning simple ideas into engaging content.
+                        From commercial reels and brand films to event coverage and social media content, my focus is
+                        always on storytelling. I believe every frame should have a purpose, and every story should
+                        leave a lasting impression.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section container reveal-section">
+            <div class="section-label">03 / SERVICES</div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">VIDEOGRAPHY</h3>
+                    <p class="service-desc">Every video starts with a story. I focus on framing, movement, and creative
+                        angles to make every shot feel intentional and powerful.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">PHOTOGRAPHY</h3>
+                    <p class="service-desc">I capture moments the way they deserve to be remembered — simple, authentic,
+                        and visually focused on real emotions and textures.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">VIDEO EDITING</h3>
+                    <p class="service-desc">Editing is where the work comes together. I shape every frame and design
+                        sound to create a smooth, engaging, and natural pace.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">COMMERCIAL CONTENT</h3>
+                    <p class="service-desc">I turn brand concepts into clean commercial videos, bringing out the key
+                        details of products and dining spaces to attract real clients.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">05</div>
+                    <h3 class="service-title">SOCIAL MEDIA CONTENT</h3>
+                    <p class="service-desc">I craft premium short-form Reels and vertical clips designed for engagement
+                        without losing visual quality or feeling forced.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">06</div>
+                    <h3 class="service-title">BRAND FILMS</h3>
+                    <p class="service-desc">I work directly with founders, restaurants, and artists to document their
+                        journey and create films that tell their honest story.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Showreel Section -->
+        <section id="showreel" class="showreel-section container reveal-section">
+            <div class="section-label">04 / SHOWREEL</div>
+            <div class="showreel-player-wrapper">
+                <div class="showreel-player" id="showreel-trigger">
+                    <img src="assets/hero_bg.jpg" alt="Showreel Cover Still" class="showreel-poster">
+                    <div class="showreel-overlay-play">
+                        <div class="play-icon-container">
+                            <span class="play-arrow"></span>
+                        </div>
+                        <span class="play-label">PLAY SHOWREEL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Clients & Collaborations Section -->
+        <section id="clients" class="clients-collaborations-section container reveal-section">
+            <div class="section-label">05 / SELECTED CLIENTS & COLLABORATIONS</div>
+            <div class="clients-collaborations-grid">
+                <div class="collaborations-list">
+                    <!-- Shiv Sagar Restaurant -->
+                    <div class="collab-item">
+                        <h3 class="collab-client">Shiv Sagar Restaurant</h3>
+                        <p class="collab-services">Commercial Reels &bull; Photography &bull; Brand Content</p>
+                        <p class="collab-summary">Created dynamic short-form commercial reels and high-end food
+                            photography showcasing culinary craft, signature dishes, and dining experience to boost
+                            digital brand presence.</p>
+                    </div>
+
+                    <!-- LEA Canteen -->
+                    <div class="collab-item">
+                        <h3 class="collab-client">LEA Canteen</h3>
+                        <p class="collab-services">Food Photography &bull; Reels &bull; Social Media Content</p>
+                        <p class="collab-summary">Produced visually striking social media assets and lifestyle food
+                            Reels focusing on organic aesthetic, textures, and modern casual dining vibe.</p>
+                    </div>
+
+                    <!-- Creator Collaborations -->
+                    <div class="collab-item">
+                        <h3 class="collab-client">Creator Collaborations</h3>
+                        <p class="collab-services">Cinematic Reels &bull; BTS &bull; Content Production</p>
+                        <p class="collab-summary">Partnered with independent filmmakers and digital creators to shoot
+                            cinematic social content, high-contrast portraits, and behind-the-scenes production reels.
+                        </p>
+                    </div>
+
+                    <!-- Events & Festivals -->
+                    <div class="collab-item">
+                        <h3 class="collab-client">Events & Festivals</h3>
+                        <p class="collab-services">Photography &bull; Videography &bull; Aftermovies</p>
+                        <p class="collab-summary">Captured large-scale live music festivals and corporate events,
+                            delivering high-energy cinematic aftermovies and editorial coverage.</p>
+                    </div>
+                </div>
+
+                <div class="collab-sidebar">
+                    <div class="collab-stats">
+                        <div class="collab-stat-item">
+                            <span class="collab-stat-number">50+</span>
+                            <span class="collab-stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="collab-stat-item">
+                            <span class="collab-stat-number">20+</span>
+                            <span class="collab-stat-label">Brands Worked With</span>
+                        </div>
+                        <div class="collab-stat-item">
+                            <span class="collab-stat-number">5+</span>
+                            <span class="collab-stat-label">Years of Experience</span>
+                        </div>
+                    </div>
+                    <div class="collab-visual-card">
+                        <img src="assets/Clients.jpeg" alt="On Set Collaboration Still" class="collab-image">
+                        <span class="collab-image-caption">LIVE ON SET — PRODUCTION COLLABORATION</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container reveal-section">
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <h2 class="contact-headline">
+                        LET'S CREATE<br>
+                        SOMETHING WORTH<br>
+                        WATCHING.
+                    </h2>
+
+                    <div class="contact-links">
+                        <div class="contact-link-item">
+                            <span class="link-label">EMAIL</span>
+                            <a href="mailto:sachinballari061@gmail.com"
+                                class="link-value">sachinballari061@gmail.com</a>
+                        </div>
+                        <div class="contact-link-item">
+                            <span class="link-label">INSTAGRAM</span>
+                            <a href="https://www.instagram.com/sachframes?igsh=MTUycTdxMGNxdHV4YQ%3D%3D&utm_source=qr"
+                                target="_blank" class="link-value">@sachframes</a>
+                        </div>
+                        <div class="contact-link-item">
+                            <span class="link-label">AGENCY</span>
+                            <a href="https://www.instagram.com/frameforgemedia__?igsh=eGV5eDNjYXM4eTY3" target="_blank"
+                                class="link-value">@frameforgemedia__</a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-solid" id="start-project-btn">START A PROJECT</button>
+                </div>
+
+                <div class="contact-form-panel" id="project-form-container">
+                    <form class="project-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">YOUR NAME</label>
+                            <input type="text" id="form-name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">YOUR EMAIL</label>
+                            <input type="email" id="form-email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-service">PROJECT TYPE</label>
+                            <select id="form-service">
+                                <option value="videography">Videography / DOP</option>
+                                <option value="editing">Video Editing</option>
+                                <option value="commercial">Commercial Campaign</option>
+                                <option value="brand-film">Brand Film</option>
+                                <option value="photography">Photography</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">PROJECT BRIEF</label>
+                            <textarea id="form-message" rows="5" required
+                                placeholder="Describe your vision, scope, and timeline..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-solid form-submit-btn">SEND MESSAGE</button>
+                    </form>
+                    <div class="form-success-message" id="form-success">
+                        <h4 class="success-title">MESSAGE SENT</h4>
+                        <p>Thank you. Sachin will review your proposal and respond within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer container">
+        <div class="footer-top">
+            <span class="footer-logo">SACHFRAMES</span>
+            <div class="footer-nav">
+                <a href="#work">WORK</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 SACHFRAMES. ALL RIGHTS RESERVED.</p>
+            <a href="#" class="back-to-top" id="scroll-top-btn">BACK TO TOP &uarr;</a>
+        </div>
+    </footer>
+
+    <!-- Video Clip Modal Overlay (For viewing project clips / showreel) -->
+    <div class="video-modal" id="video-overlay">
+        <button class="modal-close" aria-label="Close Video">&times;</button>
+        <div class="modal-content">
+            <div class="modal-video-container">
+                <!-- Using styled placeholder and embedded video tag -->
+                <div class="video-placeholder" id="modal-video-placeholder">
+                    <div class="loading-spinner"></div>
+                    <span class="placeholder-text">STREAMING CINEMATIC CLIP...</span>
+                </div>
+                <!-- Real video tag that can load mock video clips -->
+                <video id="modal-player" controls autoplay playsinline class="modal-video-player">
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+            <div class="modal-meta">
+                <h4 class="modal-project-title" id="modal-title">PROJECT NAME</h4>
+                <p class="modal-project-desc" id="modal-desc">Project details and credits.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
